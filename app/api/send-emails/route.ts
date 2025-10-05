@@ -44,7 +44,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: false, message: 'SMTP not configured (SMTP_USER/SMTP_PASS missing)' }, { status: 500 })
   }
 
-  const HOST = process.env.SMTP_HOST || 'mail.beardwoodmusallah.org'
+  const HOST = process.env.SMTP_HOST || 'mail.privateemail.com'
   const PORT = Number(process.env.SMTP_PORT || 465)
   const SECURE = PORT === 465
 
