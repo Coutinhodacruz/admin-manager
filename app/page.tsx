@@ -156,7 +156,7 @@ export default function EmailManager() {
           subject: emailSubject,
           htmlContent: finalContent,
           sender: {
-            name: "Admin",
+            name: "Acc_payable",
             email: process.env.SMTP_USER|| "admin@beardwoodmusallah.org"
           }
         }),
